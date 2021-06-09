@@ -1,1 +1,285 @@
-Hello nirbhay this side
+{% load static %}
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <!-- CSS only -->
+<!--BY NIKKU--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href={% static 'assets/css/styles.css' %}>
+
+
+    <!--BY NIKKU--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!-- HOSTED -->
+    {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script> {% endcomment %}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Nirbhay Vashishtha</title>
+    </head>
+    <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="/admin/" class="nav__logo">Nirbhay Vashishtha</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#experiences" class="nav__link">Experiences</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
+
+                    <img src="{% static 'assets/img/perfil.png' %}" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/perfil.png' %}" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">Hi, I'am Nirbhay Vashishtha </h2>
+                        <span class="about__profession">P R O G R A M M M E R | C O D E R | L E A R N E R</span>
+                        <p class="about__text">An engineer with a good command over various programming languages and have the ability to work as a part of team or as an individual. I always try to do my best to make a positive impact to the organization, which in turn will help me achieve personal goals of career growth along with organizational growth. I aspire to gain expertise in the field of Software development and explore new horizons. To seek a position that provides me ample opportunity to grow professionally and where my knowledge can be shared enriched so as to create value for the organization and self-fulfillment</p>
+
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3Bp0weiBm7QOWIXmM7GKjjFA%3D%3D" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/nirbhay130699" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        {% if skills %}
+                            {% for skill in skills %}
+
+                                <span class="skills__name">  {{ skill.skill_name }}</span>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    <div class="skills__img">
+                        <img src="{% static 'assets/img/skills.png' %}" alt="">
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--===== Experiences =====-->
+            <section class="experiences section" id="experiences">
+                <h2 class="section-title">Experiences</h2>
+                <div class='bd-grid'>
+                {% if experiences %}
+                    {% for experience in experiences %}
+                        <div class="card mb-3" >
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                {% if experience.image_of_company.url %}
+                                    <img src="{{experience.image_of_company.url}}" alt="...">
+                                {% else %}  
+                                    <img src="{% static 'assets/img/experience.jpeg' %}" alt="...">
+
+                                {% endif %}
+                            
+                                </div>
+                                <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"  style="display:inline-block;">{{experience.name}}</h5><small class="text-muted"  style="display:inline-block;">--{{experience.type}}</small>
+                                    <p class="card-text"><small class="text-muted">({{experience.start_date}}-{{experience.end_date}})</small></p>
+                                    <hr>
+                                    <p class="card-text">{{experience.description}}</p>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        
+                    {% endfor %}
+                {% endif %}
+                </div>
+             
+            </section>
+
+
+
+
+
+
+
+            
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Projetcs</h2>
+                <div class="portfolio__container bd-grid">
+                    {% if projects %}
+                        {% for project in projects %}
+                            <div class="portfolio__img">
+                                <div class="card" style="width: 20rem;">
+                                    <div id="{{ project.project_name }}" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            {% if project.project_image_1.url %}
+                                                <div class="carousel-item active">
+                                                    <img src="{{project.project_image_1.url}}" class="d-block w-100" alt="iamge1">
+                                                </div>
+                                            {% endif %}
+                                            {% if project.project_image_2.url %}
+                                                <div class="carousel-item">
+                                                    <img src="{{project.project_image_2.url}}" class="d-block w-100" alt="iamge2">
+                                                </div>
+                                            {% endif %}
+                                            {% if project.project_image_3.url %}
+                                                <div class="carousel-item">
+                                                    <img src="{{project.project_image_3.url}}" class="d-block w-100" alt="iamge3">
+                                                </div>
+                                            {% endif %}
+                                            {% if project.project_image_4.url %}
+                                                <div class="carousel-item">
+                                                    <img src="{{project.project_image_4.url}}" class="d-block w-100" alt="iamge4">
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i><b>{{ project.project_name }}</b></i></h5>
+                                        <p class="card-text" style='text-align: justify;text-justify: inter-word;'>{{project.project_description}}</p>
+                                        {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        
+                        {% endfor %}
+                    
+                    {% endif %}
+                 
+                    
+                </div>
+
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">nirbhay130699@gmail.com</span>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">-</span>
+
+                        <h3 class="contact__subtitle">ADRESS</h3>
+                        <span class="contact__text">Uttar Pradesh, India</span>
+                    </div>
+
+                    <form  action ="" id="contact_form"   class="contact__form" method = "post">
+                        
+                        <div class="contact__inputs">
+                            {% csrf_token %}
+                            {{ form }}
+
+                            {% comment %} <input type="text" name='name' placeholder="Name" class="contact__input">
+                            <input type="mail" name = 'email' placeholder="Email" class="contact__input"> {% endcomment %}
+                        </div>
+
+                        {% comment %} <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea> {% endcomment %}
+
+                        <input type="submit" value="Submit" class="contact__button">
+                    </form>
+                </div>
+                {% include 'messages.html' %}
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">Nirbhay Vashishtha</h2>
+                    <p class="footer__text">This is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <a href="#experiences" class="nav__link">Experiences</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="https://www.facebook.com/nirbhay.vashishtha/" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    {% comment %} <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a> {% endcomment %}
+                    <a href="https://twitter.com/vashishnirbhay" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+       
+    </body>
+</html>
